@@ -14,6 +14,9 @@
 		3681E68A1B3306C500048426 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3681E6891B3306C500048426 /* Images.xcassets */; };
 		3681E68D1B3306C500048426 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3681E68B1B3306C500048426 /* LaunchScreen.xib */; };
 		3681E6991B3306C500048426 /* LoadingViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3681E6981B3306C500048426 /* LoadingViewTests.m */; };
+		3681E6B01B330C7F00048426 /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3681E6AC1B330C7F00048426 /* LoadingView.m */; };
+		3681E6B11B330C7F00048426 /* UIColor+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3681E6AF1B330C7F00048426 /* UIColor+Utility.m */; };
+		3681E6B51B330CC100048426 /* UIView+Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 3681E6B41B330CC100048426 /* UIView+Position.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		3681E6921B3306C500048426 /* LoadingViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoadingViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3681E6971B3306C500048426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3681E6981B3306C500048426 /* LoadingViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingViewTests.m; sourceTree = "<group>"; };
+		3681E6AC1B330C7F00048426 /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		3681E6AE1B330C7F00048426 /* UIColor+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utility.h"; sourceTree = "<group>"; };
+		3681E6AF1B330C7F00048426 /* UIColor+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utility.m"; sourceTree = "<group>"; };
+		3681E6B21B330CA200048426 /* LoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		3681E6B31B330CC100048426 /* UIView+Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Position.h"; sourceTree = "<group>"; };
+		3681E6B41B330CC100048426 /* UIView+Position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Position.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,10 @@
 		3681E67B1B3306C500048426 /* LoadingView */ = {
 			isa = PBXGroup;
 			children = (
+				3681E6B21B330CA200048426 /* LoadingView.h */,
+				3681E6AC1B330C7F00048426 /* LoadingView.m */,
+				3681E6AE1B330C7F00048426 /* UIColor+Utility.h */,
+				3681E6AF1B330C7F00048426 /* UIColor+Utility.m */,
 				3681E6801B3306C500048426 /* AppDelegate.h */,
 				3681E6811B3306C500048426 /* AppDelegate.m */,
 				3681E6831B3306C500048426 /* ViewController.h */,
@@ -89,6 +102,8 @@
 				3681E6891B3306C500048426 /* Images.xcassets */,
 				3681E68B1B3306C500048426 /* LaunchScreen.xib */,
 				3681E67C1B3306C500048426 /* Supporting Files */,
+				3681E6B31B330CC100048426 /* UIView+Position.h */,
+				3681E6B41B330CC100048426 /* UIView+Position.m */,
 			);
 			path = LoadingView;
 			sourceTree = "<group>";
@@ -220,8 +235,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3681E6851B3306C500048426 /* ViewController.m in Sources */,
+				3681E6B01B330C7F00048426 /* LoadingView.m in Sources */,
 				3681E6821B3306C500048426 /* AppDelegate.m in Sources */,
+				3681E6B51B330CC100048426 /* UIView+Position.m in Sources */,
 				3681E67F1B3306C500048426 /* main.m in Sources */,
+				3681E6B11B330C7F00048426 /* UIColor+Utility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +434,7 @@
 				3681E69E1B3306C500048426 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3681E69F1B3306C500048426 /* Build configuration list for PBXNativeTarget "LoadingViewTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +443,7 @@
 				3681E6A11B3306C500048426 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
